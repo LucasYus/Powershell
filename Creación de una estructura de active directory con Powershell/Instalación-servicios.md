@@ -2,6 +2,7 @@
 ## To apply this change, we will have to reset our computer.
 
 ```
+
 function Instalar ()
 {
     ###Active directory
@@ -14,10 +15,12 @@ function Instalar ()
 }
 
 ```
+---
 
 ## After the restart for the first part, we install the forest for our domain and the DNS to complete the instalation.
 ## When we execute this command, a text box will appear and we will have to enter the domain administrator password.
 
+```
 function Forest ()
 {
      ###Bosque y DNS
@@ -36,3 +39,4 @@ function Forest ()
     -Force:$true
   
 }
+```

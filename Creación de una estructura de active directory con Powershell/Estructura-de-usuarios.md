@@ -1,8 +1,8 @@
-## To start with the users section, we will create 2 files on the desktop where we will save the group name and the user.
-## Then, we will use a foreach loop to create an OU, add the group, create the user, and add the user to the group.
+## To start with the users function, we will create 2 files on the desktop where we will save the group name and the user.
+## Then, we will create an OU and use a foreach loop to add the group, create the user, and add the user to the group.
 
 ```
-function organizativa ()
+function usuarios ()
 {
     cd C:\Users\Administrator\Desktop
     ###Grupos y Usuarios

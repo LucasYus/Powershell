@@ -66,7 +66,6 @@ foreach ($modulo in (Get-Process -Name notepad -Module | Select-Object -ExpandPr
         } catch {
             $balloon.Icon = [System.Drawing.SystemIcons]::Warning
         }
-
         # Set BalloonTipIcon
         $balloon.BalloonTipIcon = [System.Windows.Forms.ToolTipIcon]::Info
 

@@ -58,7 +58,6 @@ foreach ($modulo in (Get-Process -Name notepad -Module | Select-Object -ExpandPr
     if ((Get-FileHash $modulo).Hash -eq "Put the hash here") {
         [System.Windows.MessageBox]::Show('Hash found', 'Warning')
         $balloon = New-Object System.Windows.Forms.NotifyIcon
-
         # Configure notification
         # Icon
         try {

@@ -58,6 +58,7 @@ foreach ($modulo in (Get-Process -Name notepad -Module | Select-Object -ExpandPr
     if ((Get-FileHash $modulo).Hash -eq "Put the hash here") {
         [System.Windows.MessageBox]::Show('Hash found', 'Warning')
         $balloon = New-Object System.Windows.Forms.NotifyIcon
+
         # Configure notification
         # Icon
         try {
@@ -65,10 +66,13 @@ foreach ($modulo in (Get-Process -Name notepad -Module | Select-Object -ExpandPr
         } catch {
             $balloon.Icon = [System.Drawing.SystemIcons]::Warning
         }
+
         # Set BalloonTipIcon
         $balloon.BalloonTipIcon = [System.Windows.Forms.ToolTipIcon]::Info
+
         # Message
         $balloon.BalloonTipText = "The module $modulo has the specified hash."
+
         # Title
         $balloon.BalloonTipTitle = "Esto es malo"
         $balloon.Visible = $true

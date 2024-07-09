@@ -1,4 +1,4 @@
-## detect-evil-hash-and-report-it
+## Detect the evil hash of a file and report it with a message
 
 ## Explanation by parts
 
@@ -53,7 +53,7 @@ $balloon.ShowBalloonTip(5000)
 This makes the NotifyIcon visible in the system tray and displays the balloon tip for 5000 milliseconds (5 seconds).
 
 ## All the code
-´´´
+```
 foreach ($modulo in (Get-Process -Name notepad -Module | Select-Object -ExpandProperty FileName)) {
     if ((Get-FileHash $modulo).Hash -eq "Put the hash here") {
         [System.Windows.MessageBox]::Show('Hash found', 'Warning')
@@ -75,7 +75,6 @@ foreach ($modulo in (Get-Process -Name notepad -Module | Select-Object -ExpandPr
 
         # Title
         $balloon.BalloonTipTitle = "Esto es malo"
-
         $balloon.Visible = $true
         $balloon.ShowBalloonTip(5000)
     }

@@ -1,4 +1,4 @@
-## Monitor processor usage and display a notification if usage exceeds a certain threshold.
+# Monitor processor usage and display a notification if usage exceeds a certain threshold.
 
 ## Explanation by parts
 

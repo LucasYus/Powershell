@@ -8,25 +8,25 @@
 $procesador = Get-WmiObject Win32_Processor
 $proceso = $procesador.LoadPercentage
 ```
-** This code uses the Get-WmiObject cmdlet to access the Win32_Processor class from WMI, which provides information about the processor. The LoadPercentage property is then extracted and stored in the $loadPercentage variable.
+*This code uses the Get-WmiObject cmdlet to access the Win32_Processor class from WMI, which provides information about the processor. The LoadPercentage property is then extracted and stored in the $loadPercentage variable.
 
 ## Check if the Load Percentage Exceeds 6:
 ```
 if ($loadPercentage -gt 6)
 ```
-** This line checks if the processor's load percentage is greater than 6. If the condition is true, the code inside the if block is executed.
+This line checks if the processor's load percentage is greater than 6. If the condition is true, the code inside the if block is executed.
 
 ## Show a Warning Message Box:
 ```
 [System.Windows.MessageBox]::Show('Processor load is high', 'Warning')
 ```
-** This line displays a message box with the title "Warning" and the message "Processor load is high". The `[System.Windows.MessageBox]::Show ` method is used for this.
+This line displays a message box with the title "Warning" and the message "Processor load is high". The `[System.Windows.MessageBox]::Show ` method is used for this.
 
 ## Create and Configure the Notification:
 ```
 $balloon = New-Object System.Windows.Forms.NotifyIcon
 ```
-** This line creates a new NotifyIcon object which will be used to display a notification in the system tray.
+This line creates a new NotifyIcon object which will be used to display a notification in the system tray.
 
 ## Set the Notification Icon:
 ```

@@ -1,4 +1,4 @@
-## detect-evil-hash-and-report-it
+## Detect the evil hash of a file and report it with a message
 
 ## Explanation by parts
 

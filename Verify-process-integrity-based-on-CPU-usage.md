@@ -33,7 +33,7 @@ comprobar (Get-Content archivo.txt)
 ```
 Calls the comprobar function with the known good hash value read from archivo.txt.
 
-## All the code
+# All the code
 ```
 function comprobar ($integridadbuena)
 {

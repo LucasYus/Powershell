@@ -53,7 +53,7 @@ $balloon.ShowBalloonTip(5000)
 ```
 This makes the NotifyIcon visible in the system tray and displays the balloon tip for 5000 milliseconds (5 seconds).
 
-## All the code
+# All the code
 ```
 # Obtener el porcentaje de carga del procesador
 $procesador = Get-WmiObject Win32_Processor

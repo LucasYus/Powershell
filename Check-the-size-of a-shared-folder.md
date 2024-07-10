@@ -28,7 +28,7 @@ if ($totalSize -lt $total * 0.8) {
 ```
 Checks if the $totalSize (total size of files in the shared folder) is less than 80% of $total.
 
-## All the code
+# All the code
 ```
 $sharedFolderPath = "\\ServerName\SharedFolder"  # Reemplaza con la ruta de tu carpeta compartida
 

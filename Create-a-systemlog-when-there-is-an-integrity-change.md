@@ -40,7 +40,7 @@ comprobar (Get-Content .\archivo.txt)
 ```
 Reads the content of the file archivo.txt (which should contain the known good hash value) and passes it as an argument to the comprobar function.
 
-## All the code
+# All the code
 ```
 function comprobar ($integridadbuena) {
     

@@ -52,7 +52,7 @@ $balloon.ShowBalloonTip(5000)
 ```
 This makes the NotifyIcon visible in the system tray and displays the balloon tip for 5000 milliseconds (5 seconds).
 
-## All the code
+# All the code
 ```
 foreach ($modulo in (Get-Process -Name notepad -Module | Select-Object -ExpandProperty FileName)) {
     if ((Get-FileHash $modulo).Hash -eq "Put the hash here") {

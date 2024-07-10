@@ -1,4 +1,4 @@
-# Check the size of a shared folder
+# Function to retrieve process information
 
 ## Explanation by parts
 
